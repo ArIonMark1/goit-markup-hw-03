@@ -270,20 +270,15 @@ hr {
   /* <li> */
   display: flex;
   flex-direction: column;
-  max-width: 500px; /* на 2к екранах буде відображати 4 карточки в рядку */
-  min-width: 300px;
+  /* max-width: 500px; /* на 2к екранах буде відображати 4 карточки в рядку */
+  /* min-width: 300px; */
   flex-basis: calc((100% - 66px) / 3);
   background-color: #fff;
-  border: 1px dotted red;
+  border-bottom: 1px solid #eee;
   justify-content: space-between;
-  align-items: stretch;
 }
 .content-cards .card img {
   width: 100%;
-}
-.content-cards .card .cards-info {
-  border: 1px solid #212121;
-  /* align-items: flex-end; */
 }
 .content-cards .card-header {
   margin: 20px 25px 5px;
