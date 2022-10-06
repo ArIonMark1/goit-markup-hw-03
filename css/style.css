@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background: #fff;
+  background: #f5f5f5;
   color: #757575;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -15,12 +15,16 @@ hr {
   background-color: #ececec;
   height: 1px;
 }
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
 /* стилі сайд бару, лого */
-.header {
+.header .container {
   display: flex;
   justify-content: space-between;
-  /* padding: 25px 215px; */
-  padding: 1.56% 13.45%;
+  padding: 25px 215px;
+  /* padding: 1.56% 13.45%; */
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -40,8 +44,6 @@ hr {
 }
 .header .list-navigation,
 .contacts {
-  /* margin: 0;
-  padding: 0; */
   display: flex;
   gap: 50px;
 }
@@ -60,7 +62,7 @@ hr {
 .header .list-navigation a,
 .header .contacts a {
   text-decoration: none;
-  font-weight: 900;
+  /* font-weight: 900; */
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
@@ -68,7 +70,6 @@ hr {
 }
 /* стилі контактів */
 .header .contacts a {
-  /* font-weight: 900; */
   color: #757575;
 }
 /* стилі шапки контенту */
@@ -189,10 +190,13 @@ hr {
 }
 .team-section .team-list .worker-card {
   /* <li> */
-  width: 300px;
+  max-width: 270px;
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 3px 5px 1px grey;
+}
+.team-section .team-list .worker-card img {
+  width: 100%;
 }
 .team-list-header {
   margin-top: 30px;
@@ -264,14 +268,22 @@ hr {
 }
 .content-cards .card {
   /* <li> */
+  display: flex;
+  flex-direction: column;
   max-width: 500px; /* на 2к екранах буде відображати 4 карточки в рядку */
   min-width: 300px;
   flex-basis: calc((100% - 66px) / 3);
   background-color: #fff;
-  border: 1px solid #7575751a;
+  border: 1px dotted red;
+  justify-content: space-between;
+  align-items: stretch;
 }
 .content-cards .card img {
   width: 100%;
+}
+.content-cards .card .cards-info {
+  border: 1px solid #212121;
+  /* align-items: flex-end; */
 }
 .content-cards .card-header {
   margin: 20px 25px 5px;
@@ -321,7 +333,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1324px) {
+/* @media screen and (max-width: 1324px) {
   .header {
     padding: 4.56% 5.45% 1.4%;
     display: flex;
@@ -351,7 +363,7 @@ footer {
     margin: auto 0;
   }
   /* Стилі послуг компанії */
-  .steck-company {
+/* .steck-company {
     margin: 0;
   }
   .team-section {
@@ -366,4 +378,4 @@ footer {
     padding: 60px 0;
     text-align: center;
   }
-}
+} */
