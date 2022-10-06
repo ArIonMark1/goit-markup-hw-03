@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #757575;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+hr {
+  border: none;
+  color: #ececec;
+  background-color: #ececec;
+  height: 1px;
+}
+/* стилі сайд бару, лого */
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 25px 215px; */
+  padding: 1.56% 13.45%;
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19; /* множником */
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration: none;
+}
+.logo span {
+  color: #2196f3;
+  font-family: "Raleway";
+}
+.navigation {
+  display: flex;
+}
+.header .list-navigation,
+.contacts {
+  /* margin: 0;
+  padding: 0; */
+  display: flex;
+  gap: 50px;
+}
+.header li {
+  list-style-type: none;
+  margin: auto;
+}
+.header li a:hover,
+.header li a:focus {
+  color: #2196f3;
+}
+/* стилі навігації по сайту */
+.header .list-navigation {
+  margin-left: 90px;
+}
+.header .list-navigation a,
+.header .contacts a {
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  font-weight: 500;
+}
+/* стилі контактів */
+.header .contacts a {
+  /* font-weight: 900; */
+  color: #757575;
+}
+/* стилі шапки контенту */
+.top-content {
+  width: 100%;
+  height: 600px;
+  background-color: #2f303a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-content .top-content-tittle {
+  color: #fff;
+  display: inline-block;
+  margin: 0 450px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.top-content .top-button {
+  margin-top: 30px;
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  text-align: center;
+  background: var(--background-button, red);
+  border: none;
+  letter-spacing: 0.06em;
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+/* Стилі особливостей компанії */
+.general-info {
+  margin: 90px 215px;
+}
+.list-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style-type: none;
+  justify-content: center;
+}
+.list-info .info-card {
+  width: 270px;
+  min-width: 200px;
+  flex-basis: calc((100% - 100px) / 4);
+  line-height: 1.72;
+}
+.list-info .list-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+/* Стилі послуг компанії */
+.steck-company {
+  /* text-align: center; */
+  margin: 0 215px 95px;
+}
+.steck-company .steck-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.steck-company .steck-list {
+  list-style-type: none;
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-content: center;
+  justify-content: center;
+}
+.steck-company .steck-list .list-section {
+  /* <li> */
+  max-width: 340px;
+  min-width: 200px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.steck-company .steck-list .list-section img {
+  width: 100%;
+}
+/* Стилі блоку працівників компанії */
+.team-section {
+  background: #f5f4fa;
+  padding: 90px 215px 100px;
+}
+.team-section .team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.team-section .team-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.team-section .team-list .worker-card {
+  /* <li> */
+  width: 300px;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 3px 5px 1px grey;
+}
+.team-list-header {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-list-content {
+  margin: 10px 0 30px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Кнопки головного контенту */
+.button {
+  font-family: "Roboto";
+  cursor: pointer;
+  --background-button: #2196f3;
+}
+/* контент зі сторінки портфоліо */
+.content-portfolio {
+  margin: 100px 215px 80px;
+}
+/* кнопки фільтрації */
+.filtration-button {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  gap: 10px;
+}
+.filtration-button .button {
+  border-radius: 4px;
+  border: none;
+  min-width: 155px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  padding: 5px 25px;
+}
+.filtration-button .button:hover {
+  color: #fff;
+  background: var(--background-button, red);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+/* контент сторінки портфоліо */
+.content-cards {
+  list-style-type: none;
+  margin-top: 35px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.content-cards .card {
+  /* <li> */
+  max-width: 500px; /* на 2к екранах буде відображати 4 карточки в рядку */
+  min-width: 300px;
+  flex-basis: calc((100% - 66px) / 3);
+  background-color: #fff;
+  border: 1px solid #7575751a;
+}
+.content-cards .card img {
+  width: 100%;
+}
+.content-cards .card-header {
+  margin: 20px 25px 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.content-cards .card-content {
+  margin: 0 25px 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ##### Footer ##### */
+footer {
+  background-color: #2f303a;
+  padding: 60px 215px;
+}
+.botom-logo {
+  color: #fff;
+}
+.block-address .footer-contacts {
+  display: inline-block;
+  margin-top: 20px;
+}
+.block-address .footer-contacts .address,
+.contact {
+  list-style-type: none;
+  line-height: 1.72;
+}
+.footer-contacts .address a {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.footer-contacts .contact a {
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1324px) {
+  .header {
+    padding: 4.56% 5.45% 1.4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 30px;
+  }
+  .header .list-navigation {
+    margin: 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .header .contacts {
+    display: none;
+    margin: 0;
+    gap: 20px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navigation a {
+    margin: auto 0;
+  }
+  /* Стилі послуг компанії */
+  .steck-company {
+    margin: 0;
+  }
+  .team-section {
+    background: #f5f4fa;
+    padding: 90px 0 100px;
+  }
+  .content-portfolio {
+    margin: 60px 0;
+  }
+  footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+    text-align: center;
+  }
+}
