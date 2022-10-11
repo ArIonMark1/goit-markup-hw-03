@@ -16,8 +16,9 @@ hr {
   height: 1px;
 }
 .container {
-  margin: 0 auto;
+  width: 100%;
   max-width: 1600px;
+  margin: 0 auto;
 }
 /* стилі сайд бару, лого */
 .header .container {
@@ -45,10 +46,11 @@ hr {
 .header .list-navigation,
 .contacts {
   display: flex;
+  list-style-type: none;
   gap: 50px;
 }
 .header li {
-  list-style-type: none;
+  /* list-style-type: none; */
   margin: auto;
 }
 .header li a:hover,

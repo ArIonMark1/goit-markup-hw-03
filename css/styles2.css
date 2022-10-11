@@ -1,0 +1,93 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  background: #f5f5f5;
+  color: #757575;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+/* ######################## */
+/* ######################## */
+hr {
+  border: none;
+  color: #ececec;
+  background-color: #ececec;
+  height: 1px;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  border: 1px solid red;
+}
+/* Шапка сайту */
+/* Для розташування елементів використовується Flexbox, але тільки там, де це необхідно. 
+Наприклад у шапці, навігації, списках в секціях тощо, тобто там, де розташувати елементи горизонтально по-іншому неможливо. */
+
+/* Для всіх секцій використовується один клас .section, 
+задані верхні і нижні падінги по 94px, що відсувають контент всередину секції. */
+
+/* «Контейнер» обгортає контент хедера, футера і секцій. 
+Тобто знаходиться всередині них. */
+.header {
+  padding: 25px 0;
+}
+/* я без поняття як інакше це зробити! 
+Центрування наслідується від головного блоку,
+ хоча нащо воно як я використовую space-between ?? */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* ################################### */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  margin: auto 0;
+  line-height: 1.19; /* множником */
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration: none;
+}
+.logo span {
+  color: #2196f3;
+  font-family: "Raleway";
+}
+/* ################################### */
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid goldenrod; */
+}
+.navigation .list-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 50px;
+  padding: 0;
+  margin-left: 90px;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 50px;
+  /* border: 1px solid green; */
+}
+.header .list-navigation a,
+.contacts a {
+  text-decoration: none;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  font-weight: 500;
+}
+.header .contacts a {
+  color: #757575;
+}
+.header .list-navigation a:hover,
+.header .contacts a:focus {
+  color: #2196f3;
+}
