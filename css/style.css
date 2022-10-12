@@ -30,7 +30,7 @@ hr {
 .header .container {
   display: flex;
   justify-content: space-between;
-  padding: 25px 215px;
+  /* padding: 25px 215px; */
   /* padding: 1.56% 13.45%; */
 }
 .logo {
