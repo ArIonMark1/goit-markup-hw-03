@@ -27,6 +27,10 @@ hr {
   border: 1px solid red;
 }
 /* стилі сайд бару, лого */
+
+.header {
+  padding: 25px 0;
+}
 .header .container {
   display: flex;
   justify-content: space-between;
