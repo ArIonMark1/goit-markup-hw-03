@@ -74,7 +74,6 @@ hr {
 .header .list-navigation a,
 .header .contacts a {
   text-decoration: none;
-  /* font-weight: 900; */
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
@@ -246,6 +245,7 @@ hr {
   justify-content: center;
   list-style-type: none;
   gap: 10px;
+  /* padding-right: 0; */
 }
 .filtration-button .button {
   border-radius: 4px;
