@@ -17,8 +17,14 @@ hr {
 }
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
+  /* Бредота */
+  --pad-vertical: 94px;
+  --pad-horizont: 15px;
+  padding: 0 var(--pad-horizont);
+
+  border: 1px solid red;
 }
 /* стилі сайд бару, лого */
 .header .container {
