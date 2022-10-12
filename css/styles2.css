@@ -81,7 +81,7 @@ hr {
   margin-left: 90px;
 }
 .contacts {
-  margin: auto;
+  margin: auto 0;
   gap: 50px;
   border: 1px solid green;
 }
