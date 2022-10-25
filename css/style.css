@@ -10,31 +10,21 @@ body {
   font-size: 14px;
 }
 .list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  justify-content: center;
-  /* border: 1px solid rgb(0, 157, 136); */
+  list-style: none;
 }
 .button {
   cursor: pointer;
   --background-button: #2196f3;
 }
 /* Параметри всіх контейнерів у секціях */
+/*  Для всіх секцій використовується один клас .section, 
+задані верхні і нижні падінги по 94px, 
+що відсувають контент всередину секції. */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-
-  /* border: 1px solid red; */
-}
-.section {
-  /* border: 1px solid green; */
-  padding: 90px 0;
 }
 /* #### Шапка сайту #### */
 .header {
@@ -43,7 +33,6 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 /* Оформлення Лого */
 /* ################################### */
@@ -64,18 +53,17 @@ body {
 /* ################################### */
 .navigation {
   display: flex;
-  flex-wrap: wrap;
-  /* border: 1px solid goldenrod; */
 }
 .navigation .list-navigation {
+  display: flex;
   gap: 50px;
-  margin: auto;
+  align-items: center;
   margin-left: 90px;
 }
-.contacts {
-  margin: auto 0;
+.header-container .contacts {
+  display: flex;
+  align-items: center;
   gap: 50px;
-  /* border: 1px solid green; */
 }
 .header .list-navigation a,
 .contacts a {
@@ -113,7 +101,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* border: 1px solid goldenrod; */
   margin: 0 auto;
 }
 .top-content .top-button {
@@ -126,16 +113,22 @@ body {
   border: none;
   letter-spacing: 0.06em;
   color: #fff;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 }
 /* Стилі особливостей компанії */
+.general-info {
+  padding: 90px 0;
+}
 .list-info {
+  display: flex;
   gap: 30px;
 }
 .list-info .info-card {
+  /* <li> */
   max-width: 270px;
   flex-basis: calc((100% - 90px) / 4);
   line-height: 1.72;
@@ -150,6 +143,9 @@ body {
   margin-bottom: 10px;
 }
 /* Загальні стилі для заголовків секцій */
+.steck-company {
+  padding-bottom: 90px;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -161,6 +157,7 @@ body {
 }
 /* Стилі послуг компанії */
 .steck-company .steck-list {
+  display: flex;
   gap: 30px;
 }
 .steck-company .steck-list .list-section {
@@ -175,8 +172,10 @@ body {
 /* Стилі блоку працівників компанії */
 .team-section {
   background: #f5f4fa;
+  padding-bottom: 90px;
 }
 .team-section .team-list {
+  display: flex;
   gap: 30px;
 }
 .team-section .team-list .worker-card {
@@ -191,8 +190,11 @@ body {
 .team-section .team-list .worker-card img {
   width: 100%;
 }
+.worker-info {
+  padding: 30px 0;
+}
 .team-list-header {
-  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -201,7 +203,6 @@ body {
   color: #212121;
 }
 .team-list-content {
-  margin: 10px 0 30px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -213,7 +214,21 @@ body {
 /* ############################# */
 
 /* кнопки зі сторінки портфоліо */
+.top-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+.content-portfolio {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.filtration-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
 .filtration-button .button {
+  font-family: inherit;
   border-radius: 4px;
   border: none;
   font-style: normal;
@@ -234,23 +249,26 @@ body {
   border-radius: 4px;
 }
 .content-cards {
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  /* border: 1px solid aqua; */
+  /* border: 1px solid red; */
 }
 .content-cards .card {
   /* <li> */
   max-width: 370px;
-  min-width: 200px;
   flex-basis: calc((100% - 60px) / 3);
-  background-color: #fff;
+  /* border: 1px solid green; */
   border-bottom: 1px solid #f2f2f2;
 }
 .content-cards .card img {
   width: 100%;
 }
+.card .content-info {
+  padding: 20px 24px;
+  /* border: 1px solid goldenrod; */
+}
 .content-cards .card-header {
-  margin: 20px 25px 5px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -259,6 +277,22 @@ body {
   color: #212121;
 }
 .content-cards .card-content {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: inherit;
+}
+/* 
+.content-cards .card { */
+/* <li> */
+/* max-width: 370px; */
+/* min-width: 200px; */
+/* flex-basis: calc((100% - 60px) / 3);
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+} */
+/* 
+.content-cards .card-content {
   margin: 0 25px 20px;
   font-style: normal;
   font-weight: 400;
@@ -266,27 +300,28 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
-}
+} */
+
 /* ##### Footer ##### */
 .main-footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .botom-logo {
+  /* строковий елемент відступи тільки вправо, вліво */
   color: #fff;
 }
-.block-address .footer-contacts {
-  display: inline-block;
-  /* display: flex;  Чи краще зробити через флекс ?????
-  flex-direction: column; */
+.block-address {
+  /* Блоковий елемент відступи вверх, вниз, по дефолту */
   margin-top: 20px;
 }
-.block-address .footer-contacts .address,
+.footer-contacts .address,
 .contact {
   line-height: 1.72;
+  margin-bottom: 10px;
+}
+.footer-contacts .contact:nth-child(2) {
+  margin-bottom: none;
 }
 .footer-contacts .address a {
   text-decoration: none;
