@@ -12,6 +12,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
   box-sizing: border-box;
 }
 body {
@@ -20,10 +21,13 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
-/* -------------------- Загальні стилі списків -------------------- */
-.list {
-  list-style: none;
+img {
+  display: block;
 }
+/* -------------------- Загальні стилі списків -------------------- */
+/* .list {
+  list-style: none;
+} */
 /* -------------------- Загальні стилі кнопок -------------------- */
 .button {
   cursor: pointer;
@@ -163,7 +167,7 @@ body {
 /* -------------------- Перелік стеку компанії ---------- */
 
 .steck-company {
-  padding-bottom: 90px;
+  padding-bottom: 95px;
 }
 /* --------------- Загальні стилі заголовків двох секцій ----- */
 .section-title {
@@ -191,7 +195,7 @@ body {
 /* -------------------- Дані працівників компанії ---------- */
 
 .team-section {
-  padding-bottom: 95px;
+  padding: 90px 0 95px;
 }
 
 .team-section .team-list {
@@ -216,13 +220,13 @@ body {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-main-color);
 }
 .worker-info .worker-info-content {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-main-color);
@@ -238,7 +242,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .filtration-button {
   border: none;
@@ -269,13 +273,16 @@ body {
   /* <li> */
   max-width: 370px;
   flex-basis: calc((100% - 60px) / 3);
-  border-bottom: 1px solid #f2f2f2;
+  /* border-bottom: 1px solid #f2f2f2; */
 }
 .content-cards-item img {
   width: 100%;
 }
 .content-cards-item .item-content {
   padding: 20px 24px;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 .content-cards-item .item-content .item-content-header {
   font-weight: 700;
