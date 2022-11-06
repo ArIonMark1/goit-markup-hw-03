@@ -217,6 +217,8 @@ img {
 }
 .worker-info {
   padding: 30px 0;
+  background: var(--third-main-color);
+  border-radius: 0px 0px 4px 4px;
 }
 .worker-info .worker-info-header {
   margin-bottom: 10px;
